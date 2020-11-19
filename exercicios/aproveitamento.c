@@ -10,3 +10,32 @@
  * Faça um programa que leia as notas das provas e do trabalho de um aluno e diga se ele está reprovado, aprovado ou
  * de prova final.
  **/
+
+#include <stdio.h>
+
+int main(){
+float prova1 = 7;
+float prova2 = 6;
+float prova3 = 8;
+float trabalho = 8;
+float media;
+
+printf("Digite a nota da prova 1: ");
+scanf("%f", &prova1);
+printf("Digite a nota da prova 2: ");
+scanf("%f", &prova2);
+printf("Digite a nota da prova 3: ");
+scanf("%f", &prova3);
+printf("Digite a nota do trabalho: ");
+scanf("%f", &trabalho);
+
+media = (prova1 + prova2*2 + prova3*2 + trabalho*5)/10;
+
+if(media < 4){
+printf("Reprovado\n");
+} else if(media >= 4 && media <= 6){
+printf("Prova final\n");
+} else if(media >= 6){
+printf ("Aprovado\n");
+}
+}

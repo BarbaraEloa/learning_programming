@@ -7,3 +7,19 @@
  * % é o operador que dá o resto de uma divisão
  *
  **/
+
+
+#include <stdio.h>
+
+int main(){
+    int A = 0;
+
+    printf("Digite um numero: ");
+    scanf("%d", &A);
+ 
+    if(A % 2 == 0){
+    printf("O resultado é par\n");
+    } else{
+    printf("O resultado é ímpar\n");
+    }
+    }
